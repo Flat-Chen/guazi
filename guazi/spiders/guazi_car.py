@@ -77,3 +77,4 @@ class GuaziCarSpider(scrapy.Spider):
                 item['url'] = response.url + str(vehicle_id)
                 item['status'] = item['url'] + '-' + str(vehicle_id) + '-' + str(vehicle)
                 yield item
+                print(item)
