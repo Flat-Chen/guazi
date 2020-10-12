@@ -126,5 +126,5 @@ class GuaziGujiaSpider(scrapy.Spider):
         item['url'] = response.url
         item['status'] = str(datetime.now().year) + '-' + str(datetime.now().month) + '-' + str(
             areaCode) + '-' + response.url
-        # print(item)
+        print(item)
         yield item
